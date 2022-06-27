@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
   height: 100vh;
   position: relative;
   margin: 0;
   background-color: #E5E4E2;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 
 main {
@@ -17,10 +18,21 @@ main {
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
-div {
-  text-align: center;
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #2F2F2F;
+  margin: 0;
+}
+
+.content {
+  color: #363636;
+  font-family: 'Rubik', serif;
+  font-size: 25px;
 }
 
 img {
