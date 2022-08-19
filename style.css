@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 body {
   height: 100vh;
@@ -32,8 +32,8 @@ h1 {
 
 .content {
   color: #363636;
-  font-family: 'Roboto Flex', sans-serif;
-  font-size: 25px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 22px;
 }
 
 img {
