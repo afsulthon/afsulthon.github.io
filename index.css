@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono:wght@400&display=swap');
 
 body {
   height: 100vh;
   position: relative;
   margin: 0;
   padding: 0;
+  background: #F2F2F2;
 }
 
 main {
@@ -15,31 +16,32 @@ main {
   align-items: center;
   height: 100%;
   width: 100%;
+  color: #2F2F2F;
 }
 
 .picture {
+  margin: 0 auto;
   width: 200px;
   height: 200px;
-  border-radius: 80px;
-  border: #2F2F2F 6px solid;
-  background: url("images/pp-bnw.jpg");
+  border-radius: 40%;
+  border: #2F2F2F 6.5px solid;
+  background: url("images/pp-bnw.png");
   background-size: cover;
-  margin: 0 auto;
+  background-color: #BE3455;
   transition: ease-in-out .25s;
 }
 
 .picture:hover {
-  border: #BE3455 5px solid;
-  background: url("images/pp-color.jpg");
+  border: #BE3455 6.5px solid;
+  background: url("images/pp-color.png");
   background-size: cover;
+  background-color: #2F2F2F;
   transform: scale(1.1);
 }
 
 h1 {
-  font-family: 'Hack', monospace;
-  color: #2F2F2F;
-  font-size: 45px;
-  font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
   transition: ease-in-out .25s;
 }
 
@@ -49,8 +51,7 @@ h1:hover {
 
 .content {
   font-family: 'Inter', sans-serif;
-  font-size: 21px;
-  color: #2F2F2F;
+  font-size: 22px;
 }
 
 a {
@@ -77,10 +78,6 @@ a:hover::before {
   transform: scaleX(1);
 }
 
-.date {
-  font-size: 16px;
-}
-
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -95,7 +92,7 @@ a:hover::before {
   }
 
   10% {
-    transform: rotate(14.0deg)
+    transform: rotate(18.0deg)
   }
 
   20% {
