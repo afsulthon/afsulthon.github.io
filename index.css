@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
@@ -6,7 +6,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background: #FFF;
+  background: white;
 }
 
 main {
@@ -27,7 +27,7 @@ main {
   background: url("images/pp-bnw.png");
   background-size: cover;
   background-color: #BE3455;
-  transition: ease-in-out .25s;
+  transition: all .25s;
 }
 
 .picture:hover {
@@ -39,35 +39,20 @@ main {
 }
 
 h1 {
-  font-family: 'Caveat', cursive;
-  font-weight: 500;
-  font-size: 75px;
-  color: #2F2F2F;
-  transition: ease-in-out .25s;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke: #2F2F2F;
+  -webkit-text-stroke-width: 2px;
   margin: 20px 0px 0px 0px;
-  text-decoration: none;
-  position: relative;
+  transition: ease-in-out .25s;
 }
 
 h1:hover {
-  color: #FFF;
-}
-
-h1::before {
-  content: '';
-  background-color: #BE3455;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 100%;
-  height: 6.5px;
-  z-index: -1;
-  transition: all .3s ease-in-out;
-}
-
-h1:hover::before {
-  bottom: 0;
-  height: 100%;
+  -webkit-text-stroke: #BE3455;
+  -webkit-text-stroke-width: 2px;
+  text-shadow: 0px 0px 20px #eb8fa5;
 }
 
 .content {
@@ -76,26 +61,26 @@ h1:hover::before {
   color: #2F2F2F;
 }
 
-a {
+.content p a {
   color: #BE3455;
   position: relative;
   text-decoration: none;
 }
 
-a::before {
+.content p a::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #BE3455;
+  background: linear-gradient(90deg, #22c1c3, #fdbb2d);
   left: 0;
   bottom: 0;
   transform-origin: left;
   transform: scaleX(0);
-  transition: transform .22s ease-in-out;
+  transition: transform .25s ease-in-out;
 }
 
-a:hover::before {
+.content p a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
