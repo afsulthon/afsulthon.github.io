@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
   height: 100vh;
   position: relative;
   margin: 0;
   padding: 0;
-  background: #F2F2F2;
+  background: #FFF;
 }
 
 main {
@@ -16,11 +17,9 @@ main {
   align-items: center;
   height: 100%;
   width: 100%;
-  color: #2F2F2F;
 }
 
 .picture {
-  margin: 0 auto;
   width: 200px;
   height: 200px;
   border-radius: 40%;
@@ -40,18 +39,41 @@ main {
 }
 
 h1 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 50px;
+  font-family: 'Caveat', cursive;
+  font-weight: 500;
+  font-size: 75px;
+  color: #2F2F2F;
   transition: ease-in-out .25s;
+  margin: 20px 0px 0px 0px;
+  text-decoration: none;
+  position: relative;
 }
 
 h1:hover {
-  color: #BE3455;
+  color: #FFF;
+}
+
+h1::before {
+  content: '';
+  background-color: #BE3455;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 6.5px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+h1:hover::before {
+  bottom: 0;
+  height: 100%;
 }
 
 .content {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
+  color: #2F2F2F;
 }
 
 a {
