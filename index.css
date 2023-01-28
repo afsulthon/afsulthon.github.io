@@ -23,7 +23,7 @@ main {
   width: 200px;
   height: 200px;
   border-radius: 40%;
-  border: #2F2F2F 6.5px solid;
+  border: #2F2F2F 5px solid;
   background: url("images/pp-bnw.png");
   background-size: cover;
   background-color: #BE3455;
@@ -31,34 +31,48 @@ main {
 }
 
 .picture:hover {
-  border: #BE3455 6.5px solid;
+  border: #BE3455 5px solid;
   background: url("images/pp-color.png");
   background-size: cover;
   background-color: #2F2F2F;
   transform: scale(1.1);
 }
 
-h1 {
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 700;
-  font-size: 60px;
-  color: white;
-  -webkit-text-stroke: #2F2F2F;
-  -webkit-text-stroke-width: 2px;
-  margin: 20px 0px 0px 0px;
-  transition: ease-in-out .25s;
+.text-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear forwards;
+  margin: 30px 0px 20px 0px;
 }
 
-h1:hover {
-  -webkit-text-stroke: #BE3455;
-  -webkit-text-stroke-width: 2px;
-  text-shadow: 0px 0px 20px #eb8fa5;
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.text-line text {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  fill: transparent;
+  stroke: #2F2F2F;
+  transition: all .25s;
+}
+
+.text-line text:hover {
+  stroke: #be3455;
 }
 
 .content {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
   color: #2F2F2F;
+  padding: 0px 0px 0px 0px;
+}
+
+.content p {
+  margin: 0px 0px 15px 0px;
 }
 
 .content p a {
