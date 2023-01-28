@@ -22,8 +22,8 @@ main {
 .picture {
   width: 200px;
   height: 200px;
-  border-radius: 40%;
-  border: #2F2F2F 5px solid;
+  border-radius: 42%;
+  border: #1b1b1b 5px solid;
   background: url("images/pp-bnw.png");
   background-size: cover;
   background-color: #BE3455;
@@ -31,44 +31,32 @@ main {
 }
 
 .picture:hover {
-  border: #BE3455 5px solid;
+  border: #be3455 5px solid;
   background: url("images/pp-color.png");
   background-size: cover;
-  background-color: #2F2F2F;
+  background-color: #1b1b1b;
   transform: scale(1.1);
 }
 
-.text-line {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: dash 5s linear forwards;
-  margin: 30px 0px 20px 0px;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.text-line text {
-  font-family: "Fira Sans", sans-serif;
+h1 {
+  margin: 20px 0px 20px 0px;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
-  font-size: 65px;
-  fill: transparent;
-  stroke: #2F2F2F;
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke: 2px #1b1b1b;
   transition: all .25s;
 }
 
-.text-line text:hover {
-  stroke: #be3455;
+h1:hover {
+  color: #1b1b1b;
+  letter-spacing: 9.4px;
 }
 
 .content {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
-  color: #2F2F2F;
-  padding: 0px 0px 0px 0px;
+  color: #1b1b1b;
 }
 
 .content p {
@@ -76,7 +64,7 @@ main {
 }
 
 .content p a {
-  color: #BE3455;
+  color: #be3455;
   position: relative;
   text-decoration: none;
 }
@@ -86,12 +74,11 @@ main {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #22c1c3, #fdbb2d);
-  left: 0;
+  background: #be3455;
   bottom: 0;
   transform-origin: left;
   transform: scaleX(0);
-  transition: transform .25s ease-in-out;
+  transition: transform .25s;
 }
 
 .content p a:hover::before {
